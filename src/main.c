@@ -6,8 +6,8 @@
  *   - 每个子命令一个 static 函数，对应 Python 的 if args.command == ...
  *   - collect / run 是第 2、3 步的桩（stub），骨架先跑通
  */
-#include "db.h"
-#include "util.h"
+#include "../include/db.h"
+#include "../include/util.h"
 
 #include <getopt.h>
 #include <stdio.h>
@@ -223,7 +223,6 @@ int main(int argc, char **argv)
         return cmd_stub("collect", 2);
     if (strcmp(cmd, "run") == 0)
         return cmd_stub("run", 3);
-
     fprintf(stderr, "未知命令: %s（用 vividlog-c help 查看帮助）\n", cmd);
     return 1;
 }

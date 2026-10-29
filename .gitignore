@@ -1,0 +1,103 @@
+# ===== C/C++ 编译产物 =====
+# 目标文件与依赖
+*.o
+*.obj
+*.ko
+*.elf
+*.d
+
+# 链接产物：可执行文件、静态库、动态库
+*.out
+*.app
+*.exe
+*.i*86
+*.x86_64
+*.hex
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.lai
+*.la
+*.lo
+*.slo
+*.mod
+*.smod
+
+# 预编译头与模块
+*.gch
+*.pch
+*.pcm
+
+# 调试与性能分析产物
+*.dSYM/
+*.su
+*.idb
+*.pdb
+*.gcda
+*.gcno
+*.gcov
+core
+core.*
+vgcore.*
+
+# ===== 构建系统 =====
+# Make
+build/
+out/
+
+# CMake
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile.cmake
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# autotools
+/autom4te.cache
+/aclocal.m4
+/configure
+/compile
+/config.*
+!/config.h.in
+/depcomp
+/install-sh
+/missing
+/stamp-h1
+/m4/
+libtool
+
+# ===== IDE =====
+# CLion
+.idea/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.sln
+*.vcxproj*
+
+# Qt Creator
+*.pro.user
+*.qmlc
+
+# ===== 本项目特定 =====
+vividlog-c
+
+# ===== 操作系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
